@@ -35,7 +35,7 @@ namespace Snake
         // exit events
         private void exit_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
         }
         // ~exit events
 
@@ -58,6 +58,20 @@ namespace Snake
         // ~minimize events
 
         // play events
+        private void play_Click(object sender, EventArgs e)
+        {
+            string path = "";
+            using (OpenFileDialog file = new OpenFileDialog())
+            {
+                if (file.ShowDialog() == DialogResult.OK)
+                    path = file.FileName;
+            }
+            Hide();
+            GameWindow gameWindow = new GameWindow(path);
+            gameWindow.ShowDialog();
+            Show();
+        }
+
         private void play_MouseEnter(object sender, EventArgs e)
         {
             play.Image = (Image)Properties.Resources.ResourceManager.GetObject("play_hover");

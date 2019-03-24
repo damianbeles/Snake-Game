@@ -46,6 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Board.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="GameWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameWindow.Designer.cs">
+      <DependentUpon>GameWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LosingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LosingWindow.Designer.cs">
+      <DependentUpon>LosingWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="SettingsWindow.cs">
       <SubType>Form</SubType>
@@ -61,6 +75,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinningWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinningWindow.Designer.cs">
+      <DependentUpon>WinningWindow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GameWindow.resx">
+      <DependentUpon>GameWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LosingWindow.resx">
+      <DependentUpon>LosingWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SettingsWindow.resx">
       <DependentUpon>SettingsWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +103,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="WinningWindow.resx">
+      <DependentUpon>WinningWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -146,6 +175,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wallcolor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eattobeat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header600x50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok_hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\congrats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrongfile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lost.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

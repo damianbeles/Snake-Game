@@ -210,6 +210,7 @@
             this.Controls.Add(this.save);
             this.Controls.Add(this.header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
             this.Name = "SettingsWindow";
             this.Text = "Snake - Settings Window";
             ((System.ComponentModel.ISupportInitialize)(this.boardColorLabel)).EndInit();

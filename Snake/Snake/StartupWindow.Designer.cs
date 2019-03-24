@@ -74,6 +74,7 @@
             this.play.Size = new System.Drawing.Size(150, 50);
             this.play.TabIndex = 3;
             this.play.TabStop = false;
+            this.play.Click += new System.EventHandler(this.play_Click);
             this.play.MouseEnter += new System.EventHandler(this.play_MouseEnter);
             this.play.MouseLeave += new System.EventHandler(this.play_MouseLeave);
             // 
@@ -124,7 +125,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "StartupWindow";
-            this.Text = "Snake";
+            this.Text = "Snake - Startup Window";
             ((System.ComponentModel.ISupportInitialize)(this.settings)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.create)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.play)).EndInit();
