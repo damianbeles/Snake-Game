@@ -1,4 +1,4 @@
-# C# Snake Game for self improvement
+# C# Snake Game for self-improvement
 
 # Motivation
 I made this snake game after creating an unpublished variation of snake developed for playing with my friends.
