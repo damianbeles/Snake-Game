@@ -62,6 +62,7 @@
             this.create.Size = new System.Drawing.Size(150, 50);
             this.create.TabIndex = 4;
             this.create.TabStop = false;
+            this.create.Click += new System.EventHandler(this.create_Click);
             this.create.MouseEnter += new System.EventHandler(this.create_MouseEnter);
             this.create.MouseLeave += new System.EventHandler(this.create_MouseLeave);
             // 

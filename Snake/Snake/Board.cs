@@ -89,8 +89,8 @@ namespace Snake
         {
             Brush brush = new SolidBrush(Settings.Instance.BoardColor);
             graphics.FillRegion(brush, graphics.Clip);
-            for (int row = 0; row < BOARD_WIDTH; ++row)
-                for (int col = 0; col < BOARD_HEIGHT; ++col)
+            for (int row = 0; row < BOARD_HEIGHT; ++row)
+                for (int col = 0; col < BOARD_WIDTH; ++col)
                 {
                     switch (map[row, col])
                     {

@@ -21,6 +21,14 @@ namespace Snake
         }
 
         // create events
+        private void create_Click(object sender, EventArgs e)
+        {
+            Hide();
+            CreateWindow createWindow = new CreateWindow();
+            createWindow.ShowDialog();
+            Show();
+        }
+
         private void create_MouseEnter(object sender, EventArgs e)
         {
             create.Image = (Image)Properties.Resources.ResourceManager.GetObject("create_hover");

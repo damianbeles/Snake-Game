@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Board.cs" />
+    <Compile Include="CreateWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateWindow.Designer.cs">
+      <DependentUpon>CreateWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Enums.cs" />
     <Compile Include="GameWindow.cs">
       <SubType>Form</SubType>
@@ -81,6 +87,9 @@
     <Compile Include="WinningWindow.Designer.cs">
       <DependentUpon>WinningWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CreateWindow.resx">
+      <DependentUpon>CreateWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +205,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lost.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\direction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fclear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\psnake.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wwall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done_hover.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
