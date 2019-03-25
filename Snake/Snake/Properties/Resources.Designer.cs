@@ -71,6 +71,15 @@ namespace Snake.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream claps {
+            get {
+                return ResourceManager.GetStream("claps", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap congrats {
@@ -127,6 +136,15 @@ namespace Snake.Properties {
             get {
                 object obj = ResourceManager.GetObject("done_hover", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream eat {
+            get {
+                return ResourceManager.GetStream("eat", resourceCulture);
             }
         }
         

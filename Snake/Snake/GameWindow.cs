@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Media;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
@@ -82,6 +83,11 @@ namespace Snake
                 isGameOver = true;
                 if (board.HasWon)
                 {
+                    if (Settings.Instance.IsSoundsOn)
+                    {
+                        SoundPlayer winningSound = new SoundPlayer(Properties.Resources.claps);
+                        winningSound.Play();
+                    }
                     WinningWindow winningWindow = new WinningWindow();
                     winningWindow.ShowDialog();
                     Close();

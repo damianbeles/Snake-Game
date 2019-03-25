@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Media;
 
 namespace Snake
 {
@@ -129,6 +130,11 @@ namespace Snake
                 }
                 else
                 {
+                    if (Settings.Instance.IsSoundsOn)
+                    {
+                        SoundPlayer eatSound = new SoundPlayer(Properties.Resources.eat);
+                        eatSound.Play();
+                    }
                     remainingFood--;
                     spawnFood();
                 }

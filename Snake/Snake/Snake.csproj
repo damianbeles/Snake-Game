@@ -227,5 +227,11 @@
   <ItemGroup>
     <None Include="Resources\done_hover.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\claps.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
